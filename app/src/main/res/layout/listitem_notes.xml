@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="377dp"
+            android:layout_height="194dp"
+            android:padding="4dp"
+            android:background="@color/list_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_file_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_file_name">
+
+            <Button
+                android:id="@+id/btn_edit_file"
+                android:layout_width="@dimen/li_btn_width"
+                android:layout_height="@dimen/li_btn_height"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textSize="@dimen/normaltxt_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_delete_file"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_file_name" />
+
+            <Button
+                android:id="@+id/btn_delete_file"
+                android:layout_width="@dimen/li_btn_width"
+                android:layout_height="@dimen/li_btn_height"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textSize="@dimen/normaltxt_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_edit_file"
+                app:layout_constraintTop_toTopOf="@+id/btn_edit_file" />
+
+            <TextView
+                android:id="@+id/tv_file_name"
+                android:layout_width="332dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="@string/filename"
+                android:textSize="@dimen/normaltxt_size"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/btn_edit_file"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

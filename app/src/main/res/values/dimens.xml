@@ -1,0 +1,7 @@
+<resources>
+      <dimen name="fab_margin">16dp</dimen>
+    <dimen name="normaltxt_size">25sp</dimen>
+    <dimen name="headertxt_size">40sp</dimen>
+    <dimen name="li_btn_width">130dp</dimen>
+    <dimen name="li_btn_height">62dp</dimen>
+</resources>
